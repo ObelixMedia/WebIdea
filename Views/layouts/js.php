@@ -19,3 +19,6 @@
     <script src="<?php echo $base_url?>assets/js/google-code-prettify/prettify.js"></script>
 
     <script src="<?php echo $base_url?>assets/js/application.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>

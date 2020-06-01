@@ -33,7 +33,7 @@
             ?>
 
                     <li class="">
-                        <a href="./plus.html">Liên Hệ</a>
+                        <a href="index.php?page=lien-he">Liên Hệ</a>
                     </li>
                     <li class="">
                         <a href="./javascript.html">Tuyển Dụng</a>
