@@ -5,9 +5,9 @@ class Controller {
   
   
       
-    public function loadPage($page,$danhmuc){
+    public function loadPage($page,$danhmuc,$idBaiViet){
         
-        print "$page <br>"."$danhmuc";
+        print "$page <br>"."$danhmuc<br>"."$idBaiViet";
     }
     public function index()
     {

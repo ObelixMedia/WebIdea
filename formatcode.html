@@ -1,179 +1,110 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<!------ Include the above in your HEAD tag ---------->
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
-<style>
-    h2{
-  text-align:center;
-  padding: 20px;
-}
-/* Slider */
-
-.slick-slide {
-    margin: 0px 20px;
-}
-
-.slick-slide img {
-    width: 100%;
-}
-
-.slick-slider
-{
-    position: relative;
-    display: block;
-    box-sizing: border-box;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-            user-select: none;
-    -webkit-touch-callout: none;
-    -khtml-user-select: none;
-    -ms-touch-action: pan-y;
-        touch-action: pan-y;
-    -webkit-tap-highlight-color: transparent;
-}
-
-.slick-list
-{
-    position: relative;
-    display: block;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-}
-.slick-list:focus
-{
-    outline: none;
-}
-.slick-list.dragging
-{
-    cursor: pointer;
-    cursor: hand;
-}
-
-.slick-slider .slick-track,
-.slick-slider .slick-list
-{
-    -webkit-transform: translate3d(0, 0, 0);
-       -moz-transform: translate3d(0, 0, 0);
-        -ms-transform: translate3d(0, 0, 0);
-         -o-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-}
-
-.slick-track
-{
-    position: relative;
-    top: 0;
-    left: 0;
-    display: block;
-}
-.slick-track:before,
-.slick-track:after
-{
-    display: table;
-    content: '';
-}
-.slick-track:after
-{
-    clear: both;
-}
-.slick-loading .slick-track
-{
-    visibility: hidden;
-}
-
-.slick-slide
-{
-    display: none;
-    float: left;
-    height: 100%;
-    min-height: 1px;
-}
-[dir='rtl'] .slick-slide
-{
-    float: right;
-}
-.slick-slide img
-{
-    display: block;
-}
-.slick-slide.slick-loading img
-{
-    display: none;
-}
-.slick-slide.dragging img
-{
-    pointer-events: none;
-}
-.slick-initialized .slick-slide
-{
-    display: block;
-}
-.slick-loading .slick-slide
-{
-    visibility: hidden;
-}
-.slick-vertical .slick-slide
-{
-    display: block;
-    height: auto;
-    border: 1px solid transparent;
-}
-.slick-arrow.slick-hidden {
-    display: none;
-}
-</style>
-</head>
-<body>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Snippet - BBBootstrap</title>
+    <link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css' rel='stylesheet'>
+    <link href='https://use.fontawesome.com/releases/v5.8.1/css/all.css' rel='stylesheet'>
     
-<div class="container">
-    <h2>Our  Partners/ Our Clients</h2>
-     <section class="customer-logos slider">
-        <div class="slide"><img src="https://image.freepik.com/free-vector/luxury-letter-e-logo-design_1017-8903.jpg"></div>
-        <div class="slide"><img src="http://www.webcoderskull.com/img/logo.png"></div>
-        <div class="slide"><img src="https://image.freepik.com/free-vector/3d-box-logo_1103-876.jpg"></div>
-        <div class="slide"><img src="https://image.freepik.com/free-vector/blue-tech-logo_1103-822.jpg"></div>
-        <div class="slide"><img src="https://image.freepik.com/free-vector/colors-curl-logo-template_23-2147536125.jpg"></div>
-        <div class="slide"><img src="https://image.freepik.com/free-vector/abstract-cross-logo_23-2147536124.jpg"></div>
-        <div class="slide"><img src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg"></div>
-        <div class="slide"><img src="https://image.freepik.com/free-vector/background-of-spots-halftone_1035-3847.jpg"></div>
-        <div class="slide"><img src="https://image.freepik.com/free-vector/retro-label-on-rustic-background_82147503374.jpg"></div>
-     </section>
-     
-  <h2><a href="http://www.webcoderskull.com" target="_blank">http://www.webcoderskull.com</a></h2>
-  </div>
-  <script>
-      $(document).ready(function(){
-    $('.customer-logos').slick({
-        slidesToShow: 6,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 1500,
-        arrows: false,
-        dots: false,
-        pauseOnHover: false,
-        responsive: [{
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 4
+    <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script type='text/javascript' src='https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js'></script>
+    <script type='text/javascript'>$(document).ready(function () {
+
+            if ($('.brands_slider').length) {
+                var brandsSlider = $('.brands_slider');
+
+                brandsSlider.owlCarousel(
+                    {
+                        loop: true,
+                        autoplay: true,
+                        autoplayTimeout: 5000,
+                        nav: false,
+                        dots: false,
+                        autoWidth: true,
+                        items: 8,
+                        margin: 42
+                    });
+
+                if ($('.brands_prev').length) {
+                    var prev = $('.brands_prev');
+                    prev.on('click', function () {
+                        brandsSlider.trigger('prev.owl.carousel');
+                    });
+                }
+
+                if ($('.brands_next').length) {
+                    var next = $('.brands_next');
+                    next.on('click', function () {
+                        brandsSlider.trigger('next.owl.carousel');
+                    });
+                }
             }
-        }, {
-            breakpoint: 520,
-            settings: {
-                slidesToShow: 3
-            }
-        }]
-    });
-});
-  </script>
+
+
+        });</script>
+</head>
+
+<body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.js"></script>
+    <div class="brands">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="brands_slider_container">
+                        <div class="owl-carousel owl-theme brands_slider">
+                            <div class="owl-item">
+                                <div class="brands_item d-flex flex-column justify-content-center"><img
+                                        src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1561819026/brands_1.jpg"
+                                        alt=""></div>
+                            </div>
+                            <div class="owl-item">
+                                <div class="brands_item d-flex flex-column justify-content-center"><img
+                                        src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1561819026/brands_2.jpg"
+                                        alt=""></div>
+                            </div>
+                            <div class="owl-item">
+                                <div class="brands_item d-flex flex-column justify-content-center"><img
+                                        src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1561819026/brands_4.jpg"
+                                        alt=""></div>
+                            </div>
+                            <div class="owl-item">
+                                <div class="brands_item d-flex flex-column justify-content-center"><img
+                                        src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1561819026/brands_5.jpg"
+                                        alt=""></div>
+                            </div>
+                            <div class="owl-item">
+                                <div class="brands_item d-flex flex-column justify-content-center"><img
+                                        src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1561819026/brands_3.jpg"
+                                        alt=""></div>
+                            </div>
+                            <div class="owl-item">
+                                <div class="brands_item d-flex flex-column justify-content-center"><img
+                                        src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1561819026/brands_6.jpg"
+                                        alt=""></div>
+                            </div>
+                            <div class="owl-item">
+                                <div class="brands_item d-flex flex-column justify-content-center"><img
+                                        src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1561819026/brands_7.jpg"
+                                        alt=""></div>
+                            </div>
+                            <div class="owl-item">
+                                <div class="brands_item d-flex flex-column justify-content-center"><img
+                                        src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1561819026/brands_8.jpg"
+                                        alt=""></div>
+                            </div>
+                        </div> <!-- Brands Slider Navigation -->
+                        <div class="brands_nav brands_prev"><i class="fas fa-chevron-left"></i></div>
+                        <div class="brands_nav brands_next"><i class="fas fa-chevron-right"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
