@@ -4,17 +4,18 @@
        ?>
        <meta charset="UTF-8">
       <!-- Le styles -->
-      <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
+      
       <link rel="stylesheet" href="<?php echo $base_url?>assets/css/font-awesome.min.css">
       <!--[if IE 7]>
       <link rel="stylesheet" href="assets/css/font-awesome-ie7.min.css">
       <![endif]-->
-      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+   
       <link href="<?php echo $base_url?>assets/css/bootplus.css" rel="stylesheet">
       <link href="<?php echo $base_url?>assets/css/bootplus-responsive.css" rel="stylesheet">
       <link href="<?php echo $base_url?>assets/css/docs.css" rel="stylesheet">
       <link href="<?php echo $base_url?>assets/js/google-code-prettify/prettify.css" rel="stylesheet">
-
+      <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script type='text/javascript' src='https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js'></script>
       <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
       <!--[if lt IE 9]>
         <script src="assets/js/html5shiv.js"></script>
@@ -26,3 +27,4 @@
       <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo $base_url?>assets/ico/apple-touch-icon-72-precomposed.png">
       <link rel="apple-touch-icon-precomposed" href="<?php echo $base_url?>assets/ico/apple-touch-icon-57-precomposed.png">
       <link rel="shortcut icon" href="<?php echo $base_url?>assets/ico/favicon.png">
+      

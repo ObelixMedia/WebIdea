@@ -9,7 +9,7 @@
 <?php
  $base_url='Views/layouts/';
  ?>
-<body data-spy="scroll" data-target=".bs-docs-sidebar" style="background-image:url('<?php echo $base_url?>assets/img/bg-integrity-1-1.png');">
+<body data-spy="scroll" data-target=".bs-docs-sidebar" style="background-image: url('/assets/img/bg-integrity-1-1.png') !important;">
  
 <?php
 include("Views/layouts/link.php");
