@@ -127,7 +127,7 @@ include("Views/layouts/header.php");
 
 
 <?php
-include("Views/layouts/js.php");
+include("Views/layouts/footer.php");
 ?>
 
 
