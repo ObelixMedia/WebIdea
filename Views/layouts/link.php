@@ -9,7 +9,7 @@
       <!--[if IE 7]>
       <link rel="stylesheet" href="assets/css/font-awesome-ie7.min.css">
       <![endif]-->
-
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
       <link href="<?php echo $base_url?>assets/css/bootplus.css" rel="stylesheet">
       <link href="<?php echo $base_url?>assets/css/bootplus-responsive.css" rel="stylesheet">
       <link href="<?php echo $base_url?>assets/css/docs.css" rel="stylesheet">

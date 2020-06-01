@@ -5,7 +5,7 @@ class Controller {
 
     public function loadPage($page,$danhmuc){
         
-        echo "$page <br>"."$danhmuc";
+        print "$page <br>"."$danhmuc";
     }
     public function index()
     {
