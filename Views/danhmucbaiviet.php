@@ -97,7 +97,7 @@ include("Views/layouts/banner.php");
 
 
 <?php
-include("Views/layouts/js.php");
+include("Views/layouts/footer.php");
 ?>
 
 
