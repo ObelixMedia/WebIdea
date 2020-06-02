@@ -41,44 +41,43 @@ include("Views/layouts/js.php");
 		<h2 style="text-align: center; font-weight: bold">Đối tác của chúng tôi</h2>
 		<p class="text-ll" style="text-align: center; font-size: 18px">Chúng tôi tạo ra giá trị thông qua quản lý chuỗi cung ứng từ nhiều đối tác, nhờ đó giảm thời gian dự án. New Ocean không ngừng hoàn thành tốt vai trò nhà tích hợp hệ thống và hợp tác với các nhà cung cấp sản phẩm công nghiệp hàng đầu tại Châu Âu và trên thế giới. Sự hỗ trợ của các đối tác giúp chúng tôi phát triển các hệ thống tiên tiến nhất, đem lại sự hài lòng cho khách hàng.</p>
 	</div>
+	<section class="customer-logos">
+      <div class="slide"><img src="<?php echo $base_url?>/assets/img/biasaigon.png"></div>
+      <div class="slide"><img src="<?php echo $base_url?>/assets/img/hoaphat.png"></div>
+      <div class="slide"><img src="<?php echo $base_url?>/assets/img/intimex.png"></div>
+      <div class="slide"><img src="<?php echo $base_url?>/assets/img/mobifone.png"></div>
+      <div class="slide"><img src="<?php echo $base_url?>/assets/img/ocean.png"></div>
+      <div class="slide"><img src="<?php echo $base_url?>/assets/img/sobek.png"></div>
+      <div class="slide"><img src="<?php echo $base_url?>/assets/img/total.png"></div>
+      <div class="slide"><img src="<?php echo $base_url?>/assets/img/viettel.png"></div>
+      <div class="slide"><img src="<?php echo $base_url?>/assets/img/vinaphone.png"></div>
+   </section>
+	<script>
+	$(document).ready(function(){
+			$('.customer-logos').slick({
+				slidesToShow: 6,
+				slidesToScroll: 1,
+				autoplay: true,
+				autoplaySpeed: 2000,
+				arrows: false,
+				dots: false,
+					pauseOnHover: false,
+					responsive: [{
+					breakpoint: 768,
+					settings: {
+						slidesToShow: 3
+					}
+				}, {
+					breakpoint: 520,
+					settings: {
+						slidesToShow: 2
+					}
+				}]
+			});
+		});
+	</script>
 </div>
-	<div class="container">
-     <section class="customer-logos slider">
-        <div class="slide"><img src="https://image.freepik.com/free-vector/luxury-letter-e-logo-design_1017-8903.jpg"></div>
-        <div class="slide"><img src="http://www.webcoderskull.com/img/logo.png"></div>
-        <div class="slide"><img src="https://image.freepik.com/free-vector/3d-box-logo_1103-876.jpg"></div>
-        <div class="slide"><img src="https://image.freepik.com/free-vector/blue-tech-logo_1103-822.jpg"></div>
-        <div class="slide"><img src="https://image.freepik.com/free-vector/colors-curl-logo-template_23-2147536125.jpg"></div>
-        <div class="slide"><img src="https://image.freepik.com/free-vector/abstract-cross-logo_23-2147536124.jpg"></div>
-        <div class="slide"><img src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg"></div>
-        <div class="slide"><img src="https://image.freepik.com/free-vector/background-of-spots-halftone_1035-3847.jpg"></div>
-        <div class="slide"><img src="https://image.freepik.com/free-vector/retro-label-on-rustic-background_82147503374.jpg"></div>
-     </section>
-  </div>
-  <script>
-      $(document).ready(function(){
-    $('.customer-logos').slick({
-        slidesToShow: 6,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 1500,
-        arrows: false,
-        dots: false,
-        pauseOnHover: false,
-        responsive: [{
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 4
-            }
-        }, {
-            breakpoint: 520,
-            settings: {
-                slidesToShow: 3
-            }
-        }]
-    });
-});
-  </script>
+
 
 
 <?php
@@ -86,7 +85,8 @@ include("Views/layouts/footer.php");
 ?>
 
 
-</body></html>
+</body>
+</html>
 <style>
 	.border-1{
 		border-style: dashed;
@@ -108,29 +108,28 @@ include("Views/layouts/footer.php");
 		font-family: "Quicksand-Bold", Sans-serif;
     	font-size: 21px;
 	}
-	h2{
-  text-align:center;
-  padding: 20px;
-}
-/* Slider */
-
+/*--------------------------------------- Slider ----------------------------------------*/
 .slick-slide {
-    margin: 0px 20px;
+    margin: 0px 30px;
 }
 
 .slick-slide img {
-    width: 100%;
+    width:;
+	height: 50px;
 }
 
 .slick-slider
 {
     position: relative;
+
     display: block;
     box-sizing: border-box;
+
     -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
             user-select: none;
+
     -webkit-touch-callout: none;
     -khtml-user-select: none;
     -ms-touch-action: pan-y;
@@ -141,8 +140,10 @@ include("Views/layouts/footer.php");
 .slick-list
 {
     position: relative;
+
     display: block;
     overflow: hidden;
+
     margin: 0;
     padding: 0;
 }
@@ -171,12 +172,14 @@ include("Views/layouts/footer.php");
     position: relative;
     top: 0;
     left: 0;
+
     display: block;
 }
 .slick-track:before,
 .slick-track:after
 {
     display: table;
+
     content: '';
 }
 .slick-track:after
@@ -192,6 +195,7 @@ include("Views/layouts/footer.php");
 {
     display: none;
     float: left;
+
     height: 100%;
     min-height: 1px;
 }
@@ -222,7 +226,9 @@ include("Views/layouts/footer.php");
 .slick-vertical .slick-slide
 {
     display: block;
+
     height: auto;
+
     border: 1px solid transparent;
 }
 .slick-arrow.slick-hidden {

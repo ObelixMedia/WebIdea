@@ -53,6 +53,9 @@ Develope By ObelixMedia</p></div>
     <script src="<?php echo $base_url?>assets/js/google-code-prettify/prettify.js"></script>
 
     <script src="<?php echo $base_url?>assets/js/application.js"></script>
+	<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <style>
 	.footer,.container-fluid{
 		padding: 0;
