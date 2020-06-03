@@ -33,7 +33,7 @@ Develope By ObelixMedia</p></div>
 	 
    
   <!-- Placed at the end of the document so the pages load faster -->
-  <script type="text/javascript"></script>
+  	<script type="text/javascript"></script>
     <script src="<?php echo $base_url?>assets/js/jquery.js"></script>
     <script src="<?php echo $base_url?>assets/js/bootstrap-transition.js"></script>
     <script src="<?php echo $base_url?>assets/js/bootstrap-alert.js"></script>

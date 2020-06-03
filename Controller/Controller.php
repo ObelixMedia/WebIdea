@@ -14,13 +14,18 @@ class Controller {
 		$loaiDanhMuc=new loaiDanhMuc();
 		$loaiDM=$loaiDanhMuc->getAll();
     include 'Views/danhMucBaiViet.php';
-    }public function lienhe()
-		
-    {
-			$loaiDanhMuc=new loaiDanhMuc();
-		$loaiDM=$loaiDanhMuc->getAll();
+    }
 	
+	public function lienhe(){
+		$loaiDanhMuc=new loaiDanhMuc();
+		$loaiDM=$loaiDanhMuc->getAll();
     include 'Views/lienhe.php';
+    }
+	
+	public function tuyendung(){
+		$loaiDanhMuc=new loaiDanhMuc();
+		$loaiDM=$loaiDanhMuc->getAll();
+    include 'Views/tuyendung.php';
     }
    
 	

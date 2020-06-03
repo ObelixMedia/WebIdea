@@ -15,7 +15,7 @@
 include("Views/layouts/link.php");
 include("Views/layouts/header.php");
 include("Views/layouts/menu.php");
-include("Views/layouts/js.php");
+
 ?>
 
 <div class="container">
@@ -41,7 +41,7 @@ include("Views/layouts/js.php");
 		<h2 style="text-align: center; font-weight: bold">Đối tác của chúng tôi</h2>
 		<p class="text-ll" style="text-align: center; font-size: 18px">Chúng tôi tạo ra giá trị thông qua quản lý chuỗi cung ứng từ nhiều đối tác, nhờ đó giảm thời gian dự án. New Ocean không ngừng hoàn thành tốt vai trò nhà tích hợp hệ thống và hợp tác với các nhà cung cấp sản phẩm công nghiệp hàng đầu tại Châu Âu và trên thế giới. Sự hỗ trợ của các đối tác giúp chúng tôi phát triển các hệ thống tiên tiến nhất, đem lại sự hài lòng cho khách hàng.</p>
 	</div>
-	<section class="customer-logos">
+	<div class="customer-logos">
       <div class="slide"><img src="<?php echo $base_url?>/assets/img/biasaigon.png"></div>
       <div class="slide"><img src="<?php echo $base_url?>/assets/img/hoaphat.png"></div>
       <div class="slide"><img src="<?php echo $base_url?>/assets/img/intimex.png"></div>
@@ -51,7 +51,7 @@ include("Views/layouts/js.php");
       <div class="slide"><img src="<?php echo $base_url?>/assets/img/total.png"></div>
       <div class="slide"><img src="<?php echo $base_url?>/assets/img/viettel.png"></div>
       <div class="slide"><img src="<?php echo $base_url?>/assets/img/vinaphone.png"></div>
-   </section>
+   </div>
 	<script>
 	$(document).ready(function(){
 			$('.customer-logos').slick({

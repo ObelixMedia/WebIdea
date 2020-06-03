@@ -36,7 +36,7 @@
                         <a href="index.php?page=lien-he">Liên Hệ</a>
                     </li>
                     <li class="">
-                        <a href="./javascript.html">Tuyển Dụng</a>
+                        <a href="index.php?page=tuyen-dung">Tuyển Dụng</a>
                     </li>
                 </ul>
             </div>
